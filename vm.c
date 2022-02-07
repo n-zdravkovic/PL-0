@@ -38,10 +38,14 @@ int base(int L, int BP, int *data_stack)
 
 void execute_program(instruction *code, int printFlag)
 {
+
+    int a = code->opcode;
+    printf("%d", a);
+    
 	if (printFlag)
 	{
 		printf("\t\t\t\tPC\tBP\tSP\tRP\n");
-		printf("Initial values:\t\t\t%d\t%d\t%d\t%d\n", PC, BP, SP, RP);
+		//printf("Initial values:\t\t\t%d\t%d\t%d\t%d\n", PC, BP, SP, RP);
 	}
 	
 }
